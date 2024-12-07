@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Counsel</title>
+
+    <!--Google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!--Style sheets-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../static/counselstyless.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/65bc7f4f38.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section id="title">
+        <div class="container-fluid">
+
+            <!-- Nav Bar -->
+
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="{{url_for('index')}}"><img class="nav-bar-image" src="../static/images/smalllogo.png" alt="healthcare-image" style="margin-right:10px">Brain Stroke prediction</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="{{url_for('index')}}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="{{url_for('predict')}}">Predict</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('counsel')}}">Counsel</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--Content-->
+            <div class="shreyas">
+                <div class="one">
+                    <div class="one-sub-one">
+                        <!-- Content from the first part -->
+                        <h1>Preventing Stroke and Maintaining a Healthy Life</h1>
+                        <p>Stroke is a serious medical condition that can have debilitating effects on health and quality of life. However, many strokes can be prevented by adopting healthy habits and managing risk factors. Here are some essential tips to
+                            help you reduce your risk of stroke and maintain overall well-being:</p>
+                        <ul>
+                            <li><strong>Control High Blood Pressure:</strong> Monitor your blood pressure regularly and work with your healthcare provider to keep it within a healthy range.</li>
+                            <li><strong>Eat a Healthy Diet:</strong> A balanced diet rich in fruits, vegetables, whole grains, lean proteins, and healthy fats can help lower your risk of stroke.</li>
+                            <li><strong>Maintain a Healthy Weight:</strong> Aim to achieve and maintain a healthy weight through a combination of balanced diet and regular physical activity.</li>
+                            <li><strong>Exercise Regularly:</strong> Engage in moderate-intensity aerobic exercise, such as brisk walking, swimming, or cycling, for at least 150 minutes per week.</li>
+                            <li><strong>Quit Smoking:</strong> Smoking significantly increases the risk of stroke and other cardiovascular diseases.</li>
+                            <li><strong>Limit Alcohol Consumption:</strong> Drink alcohol in moderation, if at all.</li>
+                            <li><strong>Manage Diabetes:</strong> Keep your blood sugar levels under control if you have diabetes.</li>
+                            <li><strong>Get Regular Check-ups:</strong> Regular medical check-ups can help identify and manage risk factors for stroke.</li>
+                        </ul>
+
+                        <!-- Doctor contact information -->
+                        <div class="doctor-contact">
+                            <h2>Doctor Contact Information</h2>
+                            <p><strong>Dr. John Doe, Neurologist:</strong> 123 Main Street, City, State | Phone: (555) 123-4567</p>
+                            <p><strong>Dr. Jane Smith, Neurologist:</strong> 456 Oak Avenue, City, State | Phone: (555) 987-6543</p>
+                            <p><strong>Dr. Michael Johnson, Neurologist:</strong> 789 Elm Street, City, State | Phone: (555) 456-7890</p>
+                        </div>
+                    </div>
+                    <div class="one-sub-two">
+                        <!-- Doctor image -->
+                        <img src="../static/images/councel.png" alt="doctor image">
+                    </div>
+                </div>
+
+                <span class="good-luck"><p style="text-align:center;font-weight: bold;margin-top:2rem"> Good luck! </p></span><br>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

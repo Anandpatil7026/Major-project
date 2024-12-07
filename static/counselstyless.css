@@ -1,0 +1,183 @@
+/* Body */
+
+body {
+    margin: 0;
+    background-color: #5EE6EB;
+    color: black;
+    font-family: 'Merriweather', serif;
+}
+
+
+/* Headings */
+
+h1 {
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+/* Navigation bar */
+
+.nav-bar-image {
+    width: 8%;
+}
+
+.navbar {
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+
+/* Content Sections */
+
+.shreyas {
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+
+/* Subsections */
+
+.one,
+.two,
+.three,
+.four,
+.five {
+    display: flex;
+}
+
+.one-sub-one,
+.two-sub-one,
+.three-sub-one,
+.four-sub-one,
+.five-sub-one {
+    width: 60%;
+    float: left;
+}
+
+.one-sub-two,
+.two-sub-two,
+.three-sub-two,
+.four-sub-two,
+.five-sub-two {
+    width: 40%;
+    float: right;
+}
+
+
+/* Images */
+
+.one-sub-two img,
+.two-sub-one img,
+.three-sub-two img,
+.four-sub-one img,
+.five-sub-two img {
+    margin-top: -10%;
+    width: 100%;
+    height: 80%;
+}
+
+.two-sub-one img,
+.four-sub-one img {
+    margin-top: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+/* Good luck message */
+
+.good-luck {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 640px) {
+    .py-2 {
+        display: flex;
+    }
+    .py-5 {
+        padding-top: 0rem !important;
+    }
+    .py-5 {
+        padding-bottom: 1.5rem!important;
+    }
+    .navbar {
+        padding-bottom: 0rem;
+        padding-top: 0.7rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        text-align: center;
+        color: rgba(0, 0, 0, .55);
+    }
+    .nav-bar-image {
+        width: 17%;
+    }
+    .navbar-brand {
+        width: 60%;
+    }
+    .shreyas {
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+    br {
+        display: none;
+    }
+    .one-sub-one,
+    .two-sub-two,
+    .three-sub-one,
+    .four-sub-two,
+    .five-sub-one {
+        width: 100%;
+    }
+    .one-sub-two,
+    .two-sub-one,
+    .three-sub-two,
+    .four-sub-one,
+    .five-sub-two {
+        width: 0px;
+    }
+    .good-luck {
+        padding-top: 5rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
